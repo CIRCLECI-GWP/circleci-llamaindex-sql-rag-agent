@@ -1,7 +1,6 @@
 llama-index 
 google-generativeai 
 sqlalchemy 
-nest-asyncio
 requests
 llama_hub
 Wikipedia
