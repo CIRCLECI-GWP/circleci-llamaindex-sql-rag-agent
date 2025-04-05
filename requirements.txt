@@ -1,4 +1,5 @@
 llama-index 
+llama_index.llms.google_genai
 google-generativeai 
 sqlalchemy 
 requests
