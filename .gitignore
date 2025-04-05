@@ -1,0 +1,6 @@
+/state_pdfs
+/sql-rag-env
+.env
+__pycache__
+/lib
+experiments.ipynb

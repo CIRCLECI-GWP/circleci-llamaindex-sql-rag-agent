@@ -1,0 +1,12 @@
+llama-index 
+google-generativeai 
+sqlalchemy 
+nest-asyncio
+requests
+llama_hub
+Wikipedia
+llama-index-readers-web
+pypdf2
+streamlit
+python-dotenv
+pytest
