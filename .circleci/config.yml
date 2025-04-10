@@ -74,7 +74,7 @@ jobs:
               --platform=managed \
               --region=us-central1 \
               --allow-unauthenticated \
-              --update-env-vars GOOGLE_API_KEY=$GOOGLE_API_KEY, LLAMA_CLOUD_API_KEY=$LLAMA_CLOUD_API_KEY, LLAMA_CLOUD_ORG_ID=$LLAMA_CLOUD_ORG_ID
+              --update-env-vars GOOGLE_API_KEY=$GOOGLE_API_KEY,LLAMA_CLOUD_API_KEY=$LLAMA_CLOUD_API_KEY,LLAMA_CLOUD_ORG_ID=$LLAMA_CLOUD_ORG_ID
 
 
 workflows:
