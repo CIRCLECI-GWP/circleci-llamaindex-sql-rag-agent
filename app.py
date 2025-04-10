@@ -64,7 +64,7 @@ def initialize_components():
     sql_query_engine = NLSQLTableQueryEngine(
         sql_database=sql_database,
         tables=["states"],
-        sample_rows_in_table_info=1,
+        # sample_rows_in_table_info=1,
         llm=llm,
         embed_model=llm,
         synthesize_response=True,

@@ -10,10 +10,9 @@ COPY states.db .
 COPY tests/ ./tests/
 COPY us-flag.png .
 
-# Make port 8080 available to the world outside this container
 EXPOSE 8080
 
-# Create a non-root user and switch to it
+# Create a non-root user
 RUN useradd -m appuser && chown -R appuser /app
 USER appuser
 
