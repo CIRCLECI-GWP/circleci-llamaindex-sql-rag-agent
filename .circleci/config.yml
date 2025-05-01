@@ -61,7 +61,7 @@ jobs:
             export PATH=$HOME/google-cloud-sdk/bin:$PATH
             docker login -u _json_key -p "$(cat ${HOME}/gcloud-service-key.json)" us-central1-docker.pkg.dev
       - run:
-          name: Push Docker Image
+          name: Push Docker Image to Artifacts Registry
           command: |
             export PATH=$HOME/google-cloud-sdk/bin:$PATH
             docker push us-central1-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/images/sql-rag-agent:latest

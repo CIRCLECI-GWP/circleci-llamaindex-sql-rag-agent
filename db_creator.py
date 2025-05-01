@@ -1,4 +1,5 @@
 import json
+import os
 import sqlalchemy as sa
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -32,6 +33,16 @@ class State(Base):
     capitals_object_id = sa.Column(sa.String(50))
 
 def main():
+    # Check if states.db exists and remove it before creating a new one
+    db_file = 'states.db'
+    if os.path.exists(db_file):
+        try:
+            os.remove(db_file)
+            print(f"Existing database '{db_file}' was deleted.")
+        except Exception as e:
+            print(f"Error: Failed to delete existing database. {e}")
+            return
+
     # Connect to the database
     engine = sa.create_engine('sqlite:///states.db', echo=True)
     

@@ -5,7 +5,6 @@ import os
 from pathlib import Path
 import PyPDF2
 from llama_index.core import Document
-from llama_index.indices.managed.llama_cloud import LlamaCloudIndex
 
 # Create PDF directory if it doesn't exist
 pdf_dir = Path("state_pdfs")
