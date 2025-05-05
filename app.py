@@ -75,7 +75,7 @@ def initialize_components():
     # Initialize LlamaCloud index
     index = LlamaCloudIndex(
         name="US-States-Wiki",
-        project_name="sql_rag",
+        project_name=os.getenv("LLAMA_CLOUD_PROJECT_NAME"),
         organization_id=os.getenv("LLAMA_CLOUD_ORG_ID"),
         api_key=os.getenv("LLAMA_CLOUD_API_KEY")
     )
