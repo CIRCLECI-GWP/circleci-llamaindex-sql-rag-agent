@@ -11,18 +11,21 @@ pdf_dir = Path("state_pdfs")
 pdf_dir.mkdir(exist_ok=True)
 
 # Define all US states
-states = [
-    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", 
-    "Connecticut", "Delaware", "Florida", "Georgia (U.S. state)", "Hawaii", "Idaho", 
-    "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", 
-    "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", 
-    "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", 
-    "New Hampshire", "New Jersey", "New Mexico", "New York", 
-    "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", 
-    "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", 
-    "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", 
-    "West Virginia", "Wisconsin", "Wyoming"
-]
+# states = [
+#     "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", 
+#     "Connecticut", "Delaware", "Florida", "Georgia (U.S. state)", "Hawaii", "Idaho", 
+#     "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", 
+#     "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", 
+#     "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", 
+#     "New Hampshire", "New Jersey", "New Mexico", "New York", 
+#     "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", 
+#     "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", 
+#     "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", 
+#     "West Virginia", "Wisconsin", "Wyoming"
+# ]
+
+# --- Let's just focus on a sample of 5 states for this project --- #
+states = ["Hawaii", "Alaska", "Arizona", "California","New York" ]
 
 # Function to download Wikipedia page as PDF
 def download_wikipedia_pdf(title, output_path):
