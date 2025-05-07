@@ -10,7 +10,7 @@ from llama_index.core import Document
 pdf_dir = Path("state_pdfs")
 pdf_dir.mkdir(exist_ok=True)
 
-# Define all US states
+# Define all US states (Scale to cover all states)
 # states = [
 #     "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", 
 #     "Connecticut", "Delaware", "Florida", "Georgia (U.S. state)", "Hawaii", "Idaho", 
